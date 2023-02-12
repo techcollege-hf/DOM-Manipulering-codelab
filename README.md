@@ -1,2 +1,2 @@
-# arrays-codeLab
-array opgaver og forståelse
+# DOM manipulering-codeLab
+DOM manipulering opgaver og forståelse

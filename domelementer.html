@@ -26,8 +26,7 @@
                 <a href="index.html">back</a>
             </nav>
 
-            <p>
-            <h2>getElementById, getElementsByClassName og getElementsByTagName i JavaScript</h2>
+            <br><br>
             <p>I JavaScript kan man bruge forskellige metoder til at vælge elementer på en HTML-side. Nogle af de mest
                 almindelige metoder er:</p>
             <ul>
@@ -41,20 +40,20 @@
                 </li>
             </ul>
 
+
             <h2>getElementById</h2>
-            <p>Med getElementById - funktionen kan man vælge et enkelt element ud fra dets id-attribut. Id'et skal være
-                unikt på
-                hele siden. <br> Her er et eksempel:</p>
+            <p>Med getElementById - funktionen kan man vælge et enkelt element ud fra dets id. <br> Her er et eksempel:
+            </p>
             <pre>
             	let minDiv = document.getElementById("min-div");
             	</pre>
 
             <h2>getElementsByClassName</h2>
-            <p>Med getElementsByClassName - funktionen kan man vælge en liste af elementer ud fra deres klasse-attribut.
+            <p>Med getElementsByClassName - funktionen kan man vælge en liste af elementer ud fra deres class.
                 <br> Her er et eksempel:
             </p>
             <pre>
-            	let alleParagraffer = document.getElementsByClassName("min-klasse");
+            	let alleParagraffer = document.getElementsByClassName("min-class");
             	</pre>
 
             <h2>getElementsByTagName</h2>
@@ -83,13 +82,10 @@
                 For eksempel kan man bruge en Live HTML Collection til at ændre farven på alle elementer af samme type
                 eller til
                 at tilføje en event listener til alle knapper på en side.</p>
-            <p>Når man bruger en Live HTML Collection i JavaScript, kan man få adgang til de enkelte elementer ved hjælp
+            <p>Når man bruger en Live HTML Collection i JavaScript, kan man konvertere en collection til array ved hjælp
+                af array.from() funktionen, og dermed få adgang til de enkelte elementer ved hjælp
                 af
-                indeksering eller iteration, ligesom man ville gøre med et almindeligt array. Man kan også bruge de
-                samme
-                metoder, som man ville bruge til at manipulere en enkelt HTML-element, f.eks. <code>setAttribute</code>
-                eller
-                <code>classList</code>, på alle elementer i Live HTML Collectionen.
+                indeksering eller iteration f.eks. map() funktionen.
             </p>
             <br>
 

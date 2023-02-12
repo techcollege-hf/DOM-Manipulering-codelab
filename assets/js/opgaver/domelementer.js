@@ -48,7 +48,7 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 
 /* opgave 3.3
-Brug myLiveList til at ændre h3 elementet, inden i purpleFigures, tekst til RED. du kan bruge
+Brug myLiveList til at ændre h3 elementets, inden i purpleFigures, tekst til RED. du kan bruge
 myElement.children[0].innerHTML til at ændre 1. child elements inner html.
 */
 

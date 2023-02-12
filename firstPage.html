@@ -26,15 +26,72 @@
                 <a href="index.html">back</a>
             </nav>
 
-            <p>short description of subject:</p>
-            <pre>
-                        <code>
-                        let code = eks;
-                    </code>
-        </pre>
+            <p>
+            <h2>getElementById, getElementsByClassName og getElementsByTagName i JavaScript</h2>
+            <p>I JavaScript kan man bruge forskellige metoder til at vælge elementer på en HTML-side. Nogle af de mest
+                almindelige metoder er:</p>
+            <ul>
+                <li>
+                    <code>getElementById(id)</code> - Vælger et enkelt element ud fra dets id.
+                </li>
+                <li><code>getElementsByClassName(className)</code> - Vælger en liste af elementer ud fra deres
+                    klasse.
+                </li>
+                <li><code>getElementsByTagName(tagName)</code> - Vælger en liste af elementer ud fra deres HTML-tag.
+                </li>
+            </ul>
 
-            <p>forklaring.
-                <br>
+            <h2>getElementById</h2>
+            <p>Med getElementById - funktionen kan man vælge et enkelt element ud fra dets id-attribut. Id'et skal være
+                unikt på
+                hele siden. <br> Her er et eksempel:</p>
+            <pre>
+            	let minDiv = document.getElementById("min-div");
+            	</pre>
+
+            <h2>getElementsByClassName</h2>
+            <p>Med getElementsByClassName - funktionen kan man vælge en liste af elementer ud fra deres klasse-attribut.
+                <br> Her er et eksempel:
+            </p>
+            <pre>
+            	let alleParagraffer = document.getElementsByClassName("min-klasse");
+            	</pre>
+
+            <h2>getElementsByTagName</h2>
+            <p>Med getElementsByTagName- funktionen kan man vælge en live HTML Collection af elementer ud fra deres
+                HTML-tag. <br> Her er
+                et
+                eksempel:</p>
+            <pre>
+            	let alleBilleder = document.getElementsByTagName("img");
+            	</pre>
+
+            <p>Alle tre funktioner returnerer en live HTML Collection af elementer, som man derefter kan arbejde med ved
+                hjælp af
+                DOM-manipulation.</p>
+            </p>
+            <br>
+
+            <h2>Live HTML Collection</h2>
+            <p>En Live HTML Collection i JavaScript er en samling af HTML-elementer, som automatisk opdateres, når der
+                sker
+                ændringer i dokumentet. Det betyder, at hvis man tilføjer eller fjerner et element fra dokumentet, vil
+                Live HTML
+                Collection også automatisk blive opdateret med det nye antal elementer.</p>
+            <p>Live HTML Collection kan bruges til at vælge en gruppe af HTML-elementer, som man vil manipulere på samme
+                måde.
+                For eksempel kan man bruge en Live HTML Collection til at ændre farven på alle elementer af samme type
+                eller til
+                at tilføje en event listener til alle knapper på en side.</p>
+            <p>Når man bruger en Live HTML Collection i JavaScript, kan man få adgang til de enkelte elementer ved hjælp
+                af
+                indeksering eller iteration, ligesom man ville gøre med et almindeligt array. Man kan også bruge de
+                samme
+                metoder, som man ville bruge til at manipulere en enkelt HTML-element, f.eks. <code>setAttribute</code>
+                eller
+                <code>classList</code>, på alle elementer i Live HTML Collectionen.
+            </p>
+            <br>
 
             <h1>Opgaver</h1>
     </header>

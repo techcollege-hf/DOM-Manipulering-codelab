@@ -8,20 +8,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>First page</title>
+    <title>DOM manipulering</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/template/main.css">
     <link rel="stylesheet" href="assets/css/template/site.css">
     <link rel="stylesheet" href="assets/css/opgaver/domelements.css">
-    <script src="assets/js/opgaver/firstPage.js" defer></script>
+    <script src="assets/js/opgaver/domelementer.js" defer></script>
 </head>
 
 <body>
     <header>
 
         <section class="assignmentTopSection">
-            <h1>first page</h1>
+            <h1>DOM manipulering</h1>
             <nav>
                 <a href="index.html">back</a>
             </nav>
@@ -93,45 +93,110 @@
             </p>
             <br>
 
+
+            <h2>createElment()</h2>
+            <p>createElment er en metode i JavaScript, som bruges til at oprette nye HTML-elementer. Her er et eksempel
+                på,
+                hvordan man kan oprette en ny "div" element:</p>
+            <pre><code>
+                let nyDiv = document.createElement('div');
+            </code></pre>
+            </p>
+            <p>
+                Her er et eksempel på, hvordan man kan tilføje tekst til det nye "div" element:
+            </p>
+            <pre><code>
+                nyDiv.innerText ='jubii jeg er et nyt div' ;
+                        </code></pre>
+            <br>
+            <h2>appendChild()</h2>
+            <p>
+                Du kan bruge appendChild() til at tilføje dit nye DOM element til et eksisterende element. Her er et
+                eksempel på, hvordan man kan tilføje nyDiv fra før, til et DOM element.:
+            </p>
+            <pre><code>
+            const myDomElement = document.getElementById('hotId');
+            myDomElement.appendChild(nyDiv);
+              
+                                    </code></pre>
+
+
             <h1>Opgaver</h1>
     </header>
 
     </section>
 
+
     <section class="assignmentArea">
         <header class="easy"></header>
-        <h2>first subject</h2>
-        <h3>opgave 1</h3>
-        <p>Du skal, i filen arrays.js, oprette en array i en constant variabel der hedder myArray. denne array skal
-            indeholde følgende string elementer:</p>
-        <ul>
-            <li>'element1'</li>
-            <li>'element2'</li>
-            <li>'element3'</li>
-            <li>'element4'</li>
-            <li>'element5'</li>
-        </ul>
-        <br>
+        <article>
+            <h3>Opgave 1</h3>
+            <p>Se i filen domelementer.js under opgave 1</p>
+        </article>
+
+        <div id="opgaveOne">
+            <figure id="redFigure" class="myFigure">
+                <h3>RED</h3>
+            </figure>
+
+            <figure id="yellowFigure" class="myFigure">
+                <h3>YELLOW</h3>
+            </figure>
+        </div>
+    </section>
+
+    <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h3>Opgave 2</h3>
+            <p>Se i filen domelementer.js under opgave 2</p>
 
 
-
-
+            <div id="opgaveTwo">
+                Dit resultat vises her
+            </div>
+        </article>
     </section>
 
 
     <section class="assignmentArea">
-        <header class="easy"></header>
-        <h2>second subject</h2>
-        <h3>opgave 2</h3>
-        <p>Du skal, i filen arrays.js, skrive console.logs, der giver følgende resultat i din console:</p>
-        <ul>
-            <li>element3</li>
-            <li>element5</li>
-            <li>element1</li>
-            <li>element4</li>
-            <li>element2</li>
-        </ul>
-        <p>Rækkefølgen er vigtig!!!</p>
+        <header class="medium"></header>
+        <article>
+            <h3>Opgave 3</h3>
+            <p>Se i filen domelementer.js under opgave 3</p>
+        </article>
+
+        <div id="opgaveTwo">
+
+            <figure class="purpleFigures myFigure">
+                <h3>P1</h3>
+            </figure>
+            <figure class="purpleFigures myFigure">
+                <h3>P2</h3>
+            </figure>
+            <figure class="purpleFigures myFigure">
+                <h3>P3</h3>
+            </figure>
+            <figure class="purpleFigures myFigure">
+                <h3>P4</h3>
+            </figure>
+            <figure class="purpleFigures myFigure">
+                <h3>P5</h3>
+            </figure>
+        </div>
+    </section>
+
+    <section class="assignmentArea">
+        <header class="hard"></header>
+        <article>
+            <h3>Opgave 4</h3>
+            <p>Se i filen domelementer.js under opgave 4</p>
+
+
+            <div id="opgaveFour">
+                Dit resultat vises her
+            </div>
+        </article>
     </section>
 
 

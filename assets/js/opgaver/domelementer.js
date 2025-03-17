@@ -42,6 +42,7 @@ Du skal finde alle elementer med klassen purpleFigures og console logge resultat
 Du skal finde alle elementer med klassen purpleFigures og bruge array.from() til at konvertere listen
 til et array hvor du kan bruge map funktionen til at ændre baggrundsfarven til rød.
 array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+eller bruge qurySelectorAll og foreach til at loope.
 */
 
 // din kode her
